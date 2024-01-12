@@ -1,5 +1,4 @@
 import { User } from "./user.class";
-import { Message } from "./message.class";
 
 
 export class Channel {
@@ -8,7 +7,21 @@ export class Channel {
     name!: string;
     description!: string;
     users!: User[];
-    
+
+
+
+    constructor(obj?: any) {
+        this.id = obj ? obj.id : '';
+        this.name = obj ? obj.id : '';
+        this.description = obj ? obj.description : '';
+        this.users = obj ? obj.users : [];
+
+
+
+
+    }
+
+
 
 
 

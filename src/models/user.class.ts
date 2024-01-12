@@ -1,3 +1,4 @@
+import { Channel } from "./channel.class";
 
 
 
@@ -7,7 +8,7 @@ export class User {
     id!: number;
     name!: string;
     photoURL!: string;
-    channels: string[] = [];
+    channels: Channel[] = [];
 
 
 
@@ -15,7 +16,7 @@ export class User {
         this.id = obj ? obj.id : '';
         this.name = obj ? obj.name : '';
         this.photoURL = obj ? obj.photoURL : '';
-        this.channels = obj ? obj.chats : [];
+        this.channels = obj ? obj.channels : [];
 
 
     }

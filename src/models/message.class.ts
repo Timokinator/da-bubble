@@ -1,12 +1,13 @@
 
 import { User } from "./user.class";
+import { Chat } from "./chat.class";
 
 
 export class Message {
     [x: string]: any;
     id!: number;
     text!: string;
-    channel!: string ;
+    chatId!: string;
     user!: User;
 
 
@@ -14,7 +15,7 @@ export class Message {
     constructor(obj?: any) {
         this.id = obj ? obj.id : '';
         this.text = obj ? obj.name : '';
-        this.channel = obj ? obj.channel : '';
+        this.chatId = obj ? obj.chat : '';
         this.user = obj ? obj.user : '';
 
     }
