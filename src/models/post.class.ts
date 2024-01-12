@@ -1,6 +1,7 @@
 import { User } from "./user.class";
 import { Channel } from "./channel.class";
 import { Answer } from "./answer.class";
+import { Reaction } from "./reaction.class";
 
 
 export class Post {
@@ -12,6 +13,9 @@ export class Post {
     date!: string;
     time!: string;
     answers!: Answer[];
+    reactions!: Reaction[];
+
+
 
 
     constructor(obj?: any) {
@@ -22,11 +26,12 @@ export class Post {
         this.date = obj ? obj.date : '';
         this.time = obj ? obj.time : '';
         this.answers = obj ? obj.answers : [];
-
-
+        this.reactions = obj ? obj.reactions : [];
+        
     }
 
 
+    
 
 
 }

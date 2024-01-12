@@ -1,4 +1,5 @@
 import { Post } from "./post.class";
+import { Reaction } from "./reaction.class";
 import { User } from "./user.class";
 
 
@@ -11,6 +12,7 @@ export class Answer {
     post!: Post;
     date!: string;
     time!: string;
+    reactions!: Reaction[];
 
 
 
@@ -22,6 +24,7 @@ export class Answer {
         this.post = obj ? obj.post : '';
         this.date = obj ? obj.date : '';
         this.time = obj ? obj.time : '';
+        this.reactions = obj ? obj.reactions : [];
 
     }
 

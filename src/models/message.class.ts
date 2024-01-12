@@ -1,6 +1,8 @@
 
 import { User } from "./user.class";
 import { Chat } from "./chat.class";
+import { Reaction } from "./reaction.class";
+
 
 
 export class Message {
@@ -9,6 +11,7 @@ export class Message {
     text!: string;
     chatId!: string;
     user!: User;
+    reactions!: Reaction[];
 
 
 
@@ -17,6 +20,7 @@ export class Message {
         this.text = obj ? obj.name : '';
         this.chatId = obj ? obj.chat : '';
         this.user = obj ? obj.user : '';
+        this.reactions = obj ? obj.reactions : [];
 
     }
 

@@ -8,6 +8,7 @@ export class Chat {
     user!: User[];
     messages!: Message[];
 
+    
 
 
     constructor(obj?: any) {
