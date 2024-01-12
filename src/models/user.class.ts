@@ -1,8 +1,6 @@
 import { Channel } from "./channel.class";
 
 
-
-
 export class User {
     [x: string]: any;
     id!: number;

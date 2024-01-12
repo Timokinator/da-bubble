@@ -8,7 +8,14 @@ export class Chat {
     user!: User[];
     messages!: Message[];
 
-    
+
+
+    constructor(obj?: any) {
+        this.id = obj ? obj.id : '';
+        this.user = obj ? obj.user : [];
+        this.messages = obj ? obj.messages : []
+
+    }
 
 
 
